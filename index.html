@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5529f4d66e.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <title>Elizabeth Lankford Portfolio</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-title">EL</div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a class="navlink" href="#intro">Home</a></li>
+                    <li><a class="navlink" href="#about">About</a></li>
+                    <li><a class="navlink" href="#skills">Skills</a></li>
+                    <li><a class="navlink" href="#portfolio">Projects</a></li>
+                    <li><a class="navlink" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="intro" class="intro container">
+            <div class="intro-text">
+                <h1>Hi, I'm <span>Elizabeth Lankford!</span></h1>
+                <h3>Junior Front-end Developer</h3>
+                <div class="intro-btns">
+                    <button><a href="#contact">Contact Me</a></button>
+                    <button>Resume</button>
+                </div>
+                <div class="social-links">
+                    <a target="_blank" href="https://github.com/ElizabethLankford"><i class="fa-brands fa-github fa-2xl"></i></a> 
+                    <a target="_blank" href="https://www.linkedin.com/in/elizabethlankford/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href="#"><i id="emailbtn" class="fa-solid fa-envelope fa-2xl"></i></a>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img class="image"  src="images/Elizabeth_1.jpg">
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+            <div class="about-container">
+                <h2>About me</h2>
+                <p>
+                    My professional career began in the IT field when I joined the Marine Corps in 2015. Throughout this period, I mastered key skills including technical troubleshooting and team collaboration. Once my service ended, I continued my career in the IT field while working multiple jobs focusing in customer service, system administration, and device management. After approximately 6 years in the IT field, I had a strong feeling of wanting to use more of my creativity and troubleshooting skills. I chose to transition to web design and development because it allows me to incorporate my creativity while still utilizing some of the key technical skills I learned throughout my experience in IT. I was originally working towards a Bachelor’s Degree in Information Technology Management, so when I decided to transition fields I changed my degree plan to Digital Media Design to align more with my goals. Additionally, I have been working through coding boot camps to further my knowledge of the field and master necessary skills. 
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="skills-container">
+                <h2>Skills</h2>
+                <div class="skills-inner">
+                    <div class="box-icon">
+                        <i class="fa-brands fa-html5 fa-2xl"></i>
+                        <p>HTML 5</p>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa-brands fa-square-js fa-2xl"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa-brands fa-react fa-2xl"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa-brands fa-square-github fa-2xl"></i>
+                        <p>GitHub</p>
+                    </div>
+                    <div class="box-icon">
+                        <img class="adobe-logo" src="images/adobeIllustrator.png">
+                        <p>Adobe Illustrator</p>
+                    </div>
+                    <div class="box-icon">
+                        <img class="adobe-logo" src="images/adobePhotoshop.png">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa-brands fa-figma fa-2xl "></i>
+                        <p>Figma</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="portfolio" class=" portfolio ">
+            <h2 class="portfolio-title">Portfolio</h2>
+            <div class="projects">
+                <img class="project-thumbnail" src="images/memePicker.JPG">
+                <div class="project-info">
+                    <h4>Meme Generator</h4>
+                    <p>Meme Picker site allows users to select a mood to return a meme or gif of a corgi that matches the chosen selection. The site uses an interal data set of corgi memes.</p>
+
+                </div>
+                <div class="project-links">
+                    <a target="_blank" href="https://cute-malabi-81cd23.netlify.app/" class="link">Site</a>
+                    <a target="_blank" href="https://github.com/ElizabethLankford/CorgiMemeGenerator" class="link">GitHub</a>
+                </div>
+            </div>
+            <div class="projects">
+                <img class="project-thumbnail" src="images/Macsite.JPG">
+                <div class="project-info">
+                    <h4>Mac Miller Tribute site</h4>
+                    <p>This site was created using CSS and HTML as a tribute site for rapper, Mac Miller.</p>
+
+                </div>
+                <div class="project-links">
+                    <a target="_blank" href="https://aesthetic-halva-ac2775.netlify.app/" class="link">Site</a>
+                    <a target="_blank" href="https://github.com/ElizabethLankford/MacMillerSite" class="link">GitHub</a>
+                </div>
+            </div>
+            <div class="projects">
+                <img class="project-thumbnail" src="images/colorGenerator.JPG">
+                <div class="project-info">
+                    <h4>Color Pallet Generator</h4>
+                    <p>Color pallet generator site takes in a color input and a scheme selection to output a color pallet utilising the ColorAPI.</p>
+
+                </div>
+                <div class="project-links">
+                    <a target="_blank" href="https://taupe-taffy-68420e.netlify.app/" class="link">Site</a>
+                    <a target="_blank" href="https://github.com/ElizabethLankford/colorpalletGenerator" class="link">GitHub</a>
+                </div>
+            </div>
+            <div class="projects">
+                <img class="project-thumbnail" src="images/ruby.JPG">
+                <div class="project-info">
+                    <h4>Ruby Creations</h4>
+                    <p>Ruby Creations is a site template for handmade jewlwery website. This site was created using HTML, CSS, and Adobe Photoshop.</p>
+
+                </div>
+                <div class="project-links">
+                    <a target="_blank" href="https://neon-clafoutis-4e4c11.netlify.app/" class="link">Site</a>
+                    <a target="_blank" href="https://github.com/ElizabethLankford/rubycreations" class="link">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <form action="https://formsubmit.co/elizabethlankford1@email.com" method="POST">
+                <h2>Contact Me</h2>
+                <label>Name</label>
+                <input type="text" id="name" placeholder="name..." required>
+                <label>Email</label>
+                <input type="email" id="email" placeholder="email..." required>
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="phone number...">
+                <label>Message</label>
+                <textarea id="message" rows="4" placeholder="message..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+            
+        </section>
+        
+        <footer>
+            <p><i class="fa-sharp fa-regular fa-copyright fa-xs"></i>2023 Created by Elizabeth Lankford</p>
+            <div class="footer-links">
+                <a target="_blank" href="#"><i class="fa-brands fa-github fa-lg"></i></a> 
+                <a target="_blank" href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                <a target="_blank" href="#"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,460 @@
+/* main containers */
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior:smooth;
+    background: url(images/Artboard2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    margin: auto 50px;
+    text-align: left;
+    display: flex;
+}
+/* Typography */
+h1{
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5em;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* intro */
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.image{
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+}
+.intro-text{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    text-align: center;
+    height: 30%;
+}
+.intro-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.intro-btns button{
+    background-color: white;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 1em;
+    cursor: pointer;
+}
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-links i {
+    opacity: 100%;
+    color: #fff;
+    transition: color 200ms ease-in-out;
+}
+.social-links i:hover{
+    color: black;
+    transition: color 200ms ease-in-out;
+}
+.intro-img{
+    padding: 1em;
+}
+/* about me */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.about-container{
+    margin: 20%;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+
+/* skills */
+.skills{
+    display: flex;
+    height: 100vh;
+    padding-top: 4em;
+}
+.skills-container{
+    margin: auto 10%;
+}
+.skills-inner{
+    margin-top: 3em;
+}
+.skills-container h2{
+    text-align: center;
+}
+.box-icon{
+    height: 150px;
+    width: 20%;
+    min-width: 100px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+.box-icon p{
+    font-size: 16px;
+}
+.adobe-logo{
+    height: 40px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+.skills-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Projects */
+#portfolio{
+    height: fit-content;
+    padding-top: 50px;
+}
+.portfolio{
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+.project-thumbnail{
+    height: 50%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-title{
+    text-align: center;
+    grid-column: 1 / -1;
+}
+.projects{
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: all 300ms ease;
+    padding-bottom: 1.5em;
+}
+.projects:hover{
+    transform: translateY(-10px);
+    box-shadow: 0.3em 0.7em 0.8em gray,
+    0.15em 0.5em 0.3em gray;
+  transition: all 300ms ease;
+}
+.project-info{
+    height:40%;
+    margin: 0;
+    padding: 0 .5em ;
+    line-height: 1.5em;
+    text-overflow: clip;
+}
+.project-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.project-info>h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+.link{
+    background-color: #bde0fe;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 5px;
+    cursor: pointer;    
+}
+.link:hover{
+    background-color: #91ccff;
+    text-decoration: none;
+    box-shadow: 0.3em 0.3em 0.8em rgb(174, 187, 196),
+    0.3em 0.3em 0.3em rgb(170, 186, 197);
+}
+
+/* Navigation */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+.brand-title{
+    font-size: 2rem;
+    margin: .5rem;
+    padding-left: 1em;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    background-color: #bde0fe;
+}
+.toggle-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+/* Contact me */
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 4vw;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: white;
+    font-size: 1rem;
+    font-family: inherit;
+}
+form label{
+    padding-left: 1em;
+}
+form button{
+    padding: 15px;
+    background-color: #bde0fe;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    width: 50%;
+    margin: auto;
+}
+/* footer */
+footer{
+    text-align: center;
+    margin: 0 30px;
+    padding: 1em;
+    border-top: 1px solid white;
+}
+.footer-links{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1em;
+}
+.footer-links i {
+    opacity: 100%;
+    color: #fff;
+    transition: color 200ms ease-in-out;
+}
+.footer-links i:hover{
+    color: black;
+    transition: color 200ms ease-in-out;
+}
+/* reponsive media */
+@media (max-width: 630px){
+    .toggle-btn{
+        display: flex;
+    }
+    .navbar-links{
+       display: none;
+       width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10%
+    }
+    .intro-img{
+        display: none;
+        border-radius: 10px;
+    }
+    .footer-links{
+        width: 60%;
+    }
+    .skills{
+        height: fit-content;
+    }
+    .portfolio{
+        height: fit-content;
+        min-width: 100px
+    }
+    button{
+        height: 3em;
+        width: 8em;
+        font-size: 1em;
+    }
+    .project-info{
+        height: 35%;
+    }
+    .about-container{
+        margin: 10%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+
+}
+@media (max-width: 840px){
+    .image{
+        height: 300px;
+        width: auto;
+    }
+    .intro-btns button{
+        font-size: .8em;
+        padding: auto .3em;
+    }
+}
+@media (max-width: 400px){
+    .project-links{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+    .project-info{
+        height:35%;
+        padding-left: .5em;
+        margin: 0;
+        line-height: 1.5em;
+    
+    }
+    .link{
+        background-color: #bde0fe;
+        font-size: 1em;
+        letter-spacing: 0;
+        border-radius: 5px;
+        text-align: center;
+
+    }
+    .intro-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+    }
+    button{
+        margin-top: 1em;
+        width: 100%;
+    }
+    .about-container{
+        margin: 10%;
+        font-size: .9em;
+        line-height: 1.5em;
+    }
+    
+
+}
+
+
