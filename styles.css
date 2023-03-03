@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     min-width: 300px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
     scroll-behavior:smooth;
     background: url(images/Artboard2.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -100,14 +100,18 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4em;
     height: 100vh;
 }
 .about-container{
-    margin: 20%;
+    margin: 10%;
     font-size: 1.1em;
     line-height: 1.5em;
 }
-
+.about-text{
+    line-height: 1.5em;
+    text-indent: 2em ;
+}
 
 /* skills */
 .skills{
@@ -156,7 +160,9 @@ a{
 /* Projects */
 #portfolio{
     height: fit-content;
+    margin: auto;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 .portfolio{
     box-sizing: border-box;
@@ -391,6 +397,13 @@ footer{
         height: fit-content;
         min-width: 100px
     }
+    .about{
+        padding-top: 4em;
+        margin-top:  2em;
+    }
+    .about-container{
+        overflow: scroll;
+    }
     button{
         height: 3em;
         width: 8em;
@@ -450,10 +463,21 @@ footer{
         margin-top: 1em;
         width: 100%;
     }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4em;
+        height: 100vh;
+    }
     .about-container{
-        margin: 10%;
+        margin: 5%;
         font-size: .9em;
         line-height: 1.5em;
+    }
+    .about-text{
+        line-height: 1.3em;
+        text-indent: 0 ;
     }
     
 
